@@ -1,0 +1,246 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+/* Variables */
+:root {
+  --clr-100: #f0f1f2;
+  --clr-300: #a2a8af;
+  --clr-600: #667689;
+  --clr-900: #1f2833;
+}
+
+
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* Main Body */
+body {
+  color: var(--clr-900);
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Top section */
+header {
+  padding-bottom: 15%;
+}
+
+.hero {
+  background-color: var(--clr-600);
+  color: var(--clr-100);
+}
+
+nav {
+  width: 100%;
+  padding: 2%;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  width: 33.3333%;
+  float: left;
+}
+
+.nav-left ul {
+  list-style: none;
+}
+
+.nav-left a {
+  color: var(--clr-100);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.85rem;
+  float: left;
+  margin: 2%;
+}
+
+.nav-center{
+  text-align: center;
+}
+
+.nav-center img{
+  width: 10%;
+}
+
+.btn {
+  border: 1px solid var(--clr-100);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.filled {
+  background: var(--clr-100);
+  color: var(--clr-600);
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.hero-text {
+  clear: both;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 8rem 0 3rem 0;
+}
+
+.hero-text p {
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin: 0 15% 3rem 15%;
+}
+
+.hero-text span:first-of-type {
+  vertical-align: middle;
+  margin: 0 1%;
+}
+
+.hero-text span {
+  color: var(--clr-300);
+  font-weight: 900;
+  font-size: 1.5rem
+}
+
+/* Why Section */
+.why {
+  background: var(--clr-100);
+}
+
+.text-cont {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10% 0;
+  line-height: 1.5rem;
+}
+
+.why h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Visit Section */
+.visit {
+  background: var(--clr-300);
+  padding: 5rem;
+}
+
+.visit > section {
+  width: 50%;
+  float: left;
+}
+
+.visit img {
+  margin: 5%;
+}
+
+.visit p {
+  margin: 2.5rem 0;
+}
+
+.outline {
+  color: var(--clr-900);
+  padding: 0.75rem 3rem;
+  border: 1px solid var(--clr-900);
+  border-radius: 0px;
+}
+
+/* Volunteer */
+.volunteer {
+  clear: both;
+  padding: 4rem;
+}
+
+.volunteer h2 {
+  font-size: 2rem;
+}
+
+.volunteer p {
+  margin: 2.5rem 0;
+}
+
+/* Footer */
+footer {
+  background: var(--clr-900);
+  color: var(--clr-100);
+  text-align: left;
+  padding: 1.5rem 2rem;
+}
+
+.footer-title {
+  display: block;
+  clear: both;
+  color: var(--clr-600);
+}
+
+.inner-cont {
+}
+
+.inner-cont section {
+  float: left;
+  padding-bottom: 2rem;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0.5 1rem 1rem 0;
+}
+
+.footer-left li {
+  float: left;
+  width: 5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--clr-100);
+}
+
+.footer-left {
+  width: 90%;
+}
+
+.footer-right {
+  width: 10%;
+  padding: 0;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--clr-100);
+  clear: both;
+}
+
+.footer-bottom section {
+  float: left;
+}
+
+.footer-bottom section + section {
+  float: right;
+}
+
+.footer-bottom img {
+  width: 40px;
+}
